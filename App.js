@@ -37,7 +37,7 @@ export default function App() {
         keyExtractor = {(item, index) => item.id}
         data={courseGoals}
         renderItem = {itemData =>
-         <GoalItem key= {itemData.item.id} onDelete={removeGoalHandler} title={itemData.item.value}/>
+         <GoalItem id={itemData.item.id} onDelete={removeGoalHandler} title={itemData.item.value}/>
         }
       />
       <StatusBar style="auto" />
